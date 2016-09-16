@@ -4,6 +4,7 @@
 
 package syntaxtree;
 
+import java.util.*;
 /**
  * Represents a single token in the grammar.  If the "-tk" option
  * is used, also contains a Vector of preceding special tokens.

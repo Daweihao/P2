@@ -4,6 +4,7 @@
 
 package visitor;
 import syntaxtree.*;
+import java.util.*;
 
 /**
  * All GJ visitors with no argument must implement this interface.

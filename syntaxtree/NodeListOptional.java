@@ -4,6 +4,8 @@
 
 package syntaxtree;
 
+import java.util.*;
+
 /**
  * Represents an optional grammar list, e.g. ( A )*
  */

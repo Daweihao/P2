@@ -4,6 +4,7 @@
 
 package visitor;
 import syntaxtree.*;
+import java.util.*;
 
 /**
  * Provides default methods which visit each node in the tree in depth-first

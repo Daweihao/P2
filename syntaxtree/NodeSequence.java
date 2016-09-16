@@ -4,6 +4,8 @@
 
 package syntaxtree;
 
+import java.util.*;
+
 /**
  * Represents a sequence of nodes nested within a choice, list,
  * optional list, or optional, e.g. ( A B )+ or [ C D E ]
