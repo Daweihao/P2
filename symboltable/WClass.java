@@ -75,7 +75,7 @@ public class WClass extends WType{
     public String getParent(){
         return parentName;
     }
-    public boolean setParentName(){
+    public boolean setParentName(String parentName){
         this.parentName = parentName;
         return true;
     }

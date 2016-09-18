@@ -105,9 +105,7 @@ public class GJNoArguDepthFirst<R> implements GJNoArguVisitor<R> {
 
       n.f1.accept(this);
       String cname = n.f1.f0.toString();
-      if () {
 
-      }
 
       n.f2.accept(this);
       n.f3.accept(this);
