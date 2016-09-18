@@ -10,10 +10,16 @@ import java.util.*;
  * Provides default methods which visit each node in the tree in depth-first
  * order.  Your visitors may extend this class.
  */
+
 public class GJNoArguDepthFirst<R> implements GJNoArguVisitor<R> {
    //
    // Auto class visitors--probably don't need to be overridden.
    //
+
+  Map<String,String> symbol_table = new HashMap<String,String>();
+	Map<String,Integer> int_table = new HashMap<String,Integer>();
+  ArrayList<String> store_class = new ArrayList<String>();
+  String exptype;
    public R visit(NodeList n) {
       R _ret=null;
       int _count=0;
@@ -96,7 +102,13 @@ public class GJNoArguDepthFirst<R> implements GJNoArguVisitor<R> {
    public R visit(MainClass n) {
       R _ret=null;
       n.f0.accept(this);
+
       n.f1.accept(this);
+      String cname = n.f1.f0.toString();
+      if () {
+
+      }
+
       n.f2.accept(this);
       n.f3.accept(this);
       n.f4.accept(this);
@@ -513,9 +525,10 @@ public class GJNoArguDepthFirst<R> implements GJNoArguVisitor<R> {
     */
    public R visit(PlusExpression n) {
       R _ret=null;
-      n.f0.accept(this);
+
+      Integer var1 = (Integer)n.f0.accept(this);
       n.f1.accept(this);
-      n.f2.accept(this);
+      Integer var2 = (Integer)n.f2.accept(this);
       return _ret;
    }
 
@@ -650,6 +663,7 @@ public class GJNoArguDepthFirst<R> implements GJNoArguVisitor<R> {
    public R visit(IntegerLiteral n) {
       R _ret=null;
       n.f0.accept(this);
+
       return _ret;
    }
 
